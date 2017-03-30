@@ -57,6 +57,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   src: url(../fonts/Ubuntu/Ubuntu-Light.ttf); }
 
+@font-face {
+  font-family: "Bradley Hand ITC";
+  font-weight: normal;
+  src: url(../fonts/Bradley_Hand_ITC/bradley-hand-itc-58cce4c2ae9e0.ttf); }
+
 .header {
   height: 98px;
   background: #fff; }
@@ -134,6 +139,59 @@ h1, h2, h3, h4, h5, h6 {
   height: 349px;
   width: 639px;
   float: left; }
+  .section1__left > img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; }
+
+.section1__right {
+  height: 349px;
+  width: 301px;
+  float: right; }
+
+.section1__right_rotate {
+  width: 150px;
+  -webkit-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  margin-left: 52px;
+  padding-top: 21px; }
+
+.rotate-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  font-family: "Bradley Hand ITC", cursive;
+  font-weight: normal;
+  color: #fff; }
+  .rotate-text:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 90%;
+    background: url("../img/arrow.png") no-repeat;
+    height: 25px;
+    width: 40px; }
+
+.button {
+  margin-left: 30px;
+  margin-top: 22px;
+  background: #cc99ff;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  border-radius: 6px;
+  height: 41px;
+  min-width: 263px; }
+  .button:before {
+    content: '';
+    top: 1px;
+    left: 1px;
+    background: url("../img/linkedin_copy.svg") no-repeat;
+    height: 25px;
+    width: 40px; }
 
 .footer {
   height: 204px; }
