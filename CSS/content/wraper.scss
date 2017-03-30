@@ -24,7 +24,7 @@
   }
   &>h1>small {
     text-transform: none;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 300;
   }
 }
@@ -58,7 +58,7 @@
   display: inline-block;
   font-size: 14px;
   line-height: 1.2;
-  font-family: "Bradley Hand ITC", cursive;
+  font-family: Bradley, cursive;
   font-weight: normal;
   color: #fff;
   &:after {
@@ -73,30 +73,63 @@
 }
 
 .section1__right_button {
-}
-
-.button {
   margin-left: 30px;
   margin-top: 22px;
   background: #cc99ff;
-  color: #fff;
-  border: none;
-  font-size: 20px;
-  font-family: Ubuntu, sans-serif;
-  font-weight: normal;
-  border-radius: 6px;
   height: 41px;
-  min-width: 263px;
-box-bottom-shadow: ;
-  &:before {
+  width: 263px;
+  text-align: right;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #6b4794;
+  transition: background .2s;
+  &:after {
+    display: inline-block;
     content: '';
-    top: 1px;
-    left: 1px;
-    background: url("../img/linkedin_copy.svg") no-repeat;
-    height: 25px;
-    width: 40px;
+    width: 100%;
+    font-size: 0;
+    height: 0;
+  }
+  &:hover {
+    background: #c392f6;
+  }
+  &:active {
+    box-shadow: 0 2px 2px #6b4794 inset;
+    padding-top: 1px;
   }
 }
 
+.button-link {
+  padding-right: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  line-height: 41px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    width: 23px;
+    height: 21px;
+    background: url("../img/linkedin_copy.svg") no-repeat;
+    top: 50%;
+    margin-top: -14px;
+  }
+}
+
+.section1__right_text {
+  margin-left: 30px;
+  margin-top: 24px;
+}
+
+.text-spam {
+  color: #fff;
+  line-height: 1.2;
+  font-family: Proxima, sans-serif;
+  font-weight: 300;
+}
 
 

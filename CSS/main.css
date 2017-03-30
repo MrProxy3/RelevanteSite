@@ -58,9 +58,14 @@ h1, h2, h3, h4, h5, h6 {
   src: url(../fonts/Ubuntu/Ubuntu-Light.ttf); }
 
 @font-face {
-  font-family: "Bradley Hand ITC";
+  font-family: Bradley;
   font-weight: normal;
   src: url(../fonts/Bradley_Hand_ITC/bradley-hand-itc-58cce4c2ae9e0.ttf); }
+
+@font-face {
+  font-family: Proxima;
+  font-weight: 300;
+  src: url(../fonts/Proxima_Nova/proximanova-light.otf); }
 
 .header {
   height: 98px;
@@ -131,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold; }
   .section1__header-text > h1 > small {
     text-transform: none;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 300; }
 
 .section1__left {
@@ -161,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   font-size: 14px;
   line-height: 1.2;
-  font-family: "Bradley Hand ITC", cursive;
+  font-family: Bradley, cursive;
   font-weight: normal;
   color: #fff; }
   .rotate-text:after {
@@ -173,25 +178,57 @@ h1, h2, h3, h4, h5, h6 {
     height: 25px;
     width: 40px; }
 
-.button {
+.section1__right_button {
   margin-left: 30px;
   margin-top: 22px;
   background: #cc99ff;
+  height: 41px;
+  width: 263px;
+  text-align: right;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 #6b4794;
+  transition: background .2s; }
+  .section1__right_button:after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+    font-size: 0;
+    height: 0; }
+  .section1__right_button:hover {
+    background: #c392f6; }
+  .section1__right_button:active {
+    box-shadow: 0 2px 2px #6b4794 inset;
+    padding-top: 1px; }
+
+.button-link {
+  padding-right: 15px;
+  display: inline-block;
+  text-decoration: none;
   color: #fff;
-  border: none;
   font-size: 20px;
   font-family: Ubuntu, sans-serif;
   font-weight: normal;
-  border-radius: 6px;
-  height: 41px;
-  min-width: 263px; }
-  .button:before {
+  line-height: 41px;
+  position: relative; }
+  .button-link:before {
     content: '';
-    top: 1px;
-    left: 1px;
+    position: absolute;
+    left: -28px;
+    width: 23px;
+    height: 21px;
     background: url("../img/linkedin_copy.svg") no-repeat;
-    height: 25px;
-    width: 40px; }
+    top: 50%;
+    margin-top: -14px; }
+
+.section1__right_text {
+  margin-left: 30px;
+  margin-top: 24px; }
+
+.text-spam {
+  color: #fff;
+  line-height: 1.2;
+  font-family: Proxima, sans-serif;
+  font-weight: 300; }
 
 .footer {
   height: 204px; }

@@ -1,14 +1,19 @@
 @font-face {
   font-family: Ubuntu;
   font-weight: normal;
-  src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf); }
+  src: url(../../fonts/Ubuntu/Ubuntu-Regular.ttf); }
 
 @font-face {
   font-family: Ubuntu;
   font-weight: bold;
-  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf); }
+  src: url(../../fonts/Ubuntu/Ubuntu-Bold.ttf); }
 
 @font-face {
   font-family: Ubuntu;
   font-weight: 300;
-  src: url(../fonts/Ubuntu/Ubuntu-Light.ttf); }
+  src: url(../../fonts/Ubuntu/Ubuntu-Light.ttf); }
+
+@font-face {
+  font-family: "Bradley Hand ITC";
+  font-weight: normal;
+  src: url(../../fonts/Bradley_Hand_ITC/bradley-hand-itc-58cce4c2ae9e0.ttf); }

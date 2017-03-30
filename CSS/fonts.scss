@@ -17,7 +17,13 @@
 }
 
 @font-face {
-  font-family: "Bradley Hand ITC";
+  font-family: Bradley;
   font-weight: normal;
   src: url(../fonts/Bradley_Hand_ITC/bradley-hand-itc-58cce4c2ae9e0.ttf);
+}
+
+@font-face {
+  font-family: Proxima;
+  font-weight: 300;
+  src: url(../fonts/Proxima_Nova/proximanova-light.otf);
 }
