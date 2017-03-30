@@ -1,0 +1,43 @@
+.section1 {
+  width: $container-width;
+  height: 464px;
+  margin: 0 auto;
+}
+
+.section1__header {
+  max-height: 115px;
+  overflow: hidden;
+}
+
+.section1__header-text{
+  display: block;
+  color: #fff;
+  padding: 31px 0 28px;
+  &>h1 {
+    text-transform: uppercase;
+    margin-left: 6px;
+    margin-bottom: 0;
+    line-height: .8;
+    font-family: Ubuntu, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  &>h1>small {
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+.section1__left {
+  display: inline-block;
+  height: 349px;
+  width: 639px;
+  float: left;
+}
+
+.section1__right {
+
+}
+
+
