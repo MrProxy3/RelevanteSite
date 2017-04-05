@@ -35,3 +35,32 @@
     margin-top: -14px;
   }
 }
+
+
+.button-arrow {
+  margin-top: 73px;
+  background: #cc99ff;
+  height: 63px;
+  width: 27px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px #6b4794;
+  transition: background .2s;
+  &:hover {
+    background: #c392f6;
+  }
+  &:active {
+    box-shadow: 0 2px 3px 0 #6b4794 inset;
+    padding-top: 1px;
+  }
+}
+
+.button-arrow-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  line-height: 63px;
+  position: relative;
+}

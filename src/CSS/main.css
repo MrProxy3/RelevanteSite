@@ -212,6 +212,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 33.33333%;
   height: inherit;
   float: left; }
+  .subsection__left > .avatar-pic {
+    margin-top: 28px;
+    margin-left: 40%; }
 
 .subsection__left-img {
   margin: 50px 45px 0; }
@@ -230,6 +233,9 @@ h1, h2, h3, h4, h5, h6 {
   height: inherit;
   display: inline-block;
   position: relative; }
+  .subsection__center > .avatar-pic {
+    margin-top: 28px;
+    margin-left: 40%; }
 
 .subsection__center-img {
   margin: 50px 0 0 120px; }
@@ -248,6 +254,9 @@ h1, h2, h3, h4, h5, h6 {
   height: inherit;
   display: inline-block;
   float: right; }
+  .subsection__right > .avatar-pic {
+    margin-top: 28px;
+    margin-left: 40%; }
 
 .subsection__right-list {
   padding: 50px 0; }
@@ -478,6 +487,40 @@ h1, h2, h3, h4, h5, h6 {
   width: inherit;
   background: #eff2f5; }
 
+.button-arrow-left {
+  float: left; }
+
+.button-arrow-right {
+  float: right; }
+
+.subsection-lower {
+  width: 31.4%;
+  float: left; }
+  .subsection-lower > .section3__lower_text {
+    padding-top: 5px;
+    font-size: 14.21px;
+    line-height: 1.2; }
+  .subsection-lower > .section3__lower_text > b {
+    font-size: 31.97px;
+    line-height: 0; }
+  .subsection-lower > .section3__lower_text > p {
+    text-align: right;
+    margin: 0;
+    padding-right: 31px; }
+
+.brands-header {
+  margin-top: 245px;
+  text-align: center; }
+  .brands-header > span {
+    color: #737c8b;
+    font: 300 24px Ubuntu, sans-serif; }
+
+.section__brands {
+  height: 320px;
+  background: #eff2f5; }
+  .section__brands > .container {
+    text-align: center; }
+
 .footer {
   height: 204px; }
 
@@ -537,3 +580,27 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../img/linkedin_copy.svg") no-repeat;
     top: 50%;
     margin-top: -14px; }
+
+.button-arrow {
+  margin-top: 73px;
+  background: #cc99ff;
+  height: 63px;
+  width: 27px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px #6b4794;
+  transition: background .2s; }
+  .button-arrow:hover {
+    background: #c392f6; }
+  .button-arrow:active {
+    box-shadow: 0 2px 3px 0 #6b4794 inset;
+    padding-top: 1px; }
+
+.button-arrow-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  line-height: 63px;
+  position: relative; }
