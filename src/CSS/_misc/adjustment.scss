@@ -46,7 +46,7 @@ body {
 }
 
 .container {
-  max-width: $container-width;
+  width: $container-width;
   margin: 0 auto;
 }
 
@@ -71,4 +71,10 @@ ul {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   font-weight: normal;
+}
+
+.clearfix:after {
+  content: '';
+  display: inline-block;
+  clear: both;
 }

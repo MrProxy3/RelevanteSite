@@ -1,0 +1,37 @@
+.button {
+  background: #cc99ff;
+  height: 41px;
+  min-width: 263px;
+  text-align: right;
+  border-radius: 6px;
+  box-shadow: 0 2px 3px #6b4794;
+  transition: background .2s;
+  &:hover {
+    background: #c392f6;
+  }
+  &:active {
+    box-shadow: 0 2px 3px 0 #6b4794 inset;
+    padding-top: 1px;
+  }
+}
+
+.button-link {
+  padding-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: normal;
+  line-height: 41px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    width: 23px;
+    height: 21px;
+    background: url("../img/linkedin_copy.svg") no-repeat;
+    top: 50%;
+    margin-top: -14px;
+  }
+}
