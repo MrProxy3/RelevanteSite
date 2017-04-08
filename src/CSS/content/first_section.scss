@@ -1,0 +1,167 @@
+$container-width: 940px;
+
+.section1 {
+  width: $container-width;
+  height: 464px;
+  margin: 0 auto;
+  &__header {
+    max-height: 115px;
+    overflow: hidden;
+    &-text {
+      display: block;
+      color: #fff;
+      padding: 31px 0 28px;
+      & > h1 {
+        text-transform: uppercase;
+        margin-left: 6px;
+        margin-bottom: 0;
+        font: bold 36px/0.8 Ubuntu, sans-serif;
+      }
+      & > h1 > small {
+        text-transform: none;
+        font-size: 19px;
+        font-weight: 300;
+      }
+    }
+  }
+  &__left {
+    display: inline-block;
+    height: 349px;
+    width: 639px;
+    float: left;
+    & > img {
+      max-width: 100%;
+      height: auto;
+      width: auto \9
+    ;
+    }
+  }
+  &__right {
+    height: 349px;
+    width: $container-width - 639; // -width of left section
+    float: right;
+    &_rotate {
+      width: 150px;
+      transform: rotate(-4deg);
+      margin-left: 52px;
+      padding-top: 21px;
+      & > .rotate-text {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.2;
+        font-family: Bradley, cursive;
+        font-weight: normal;
+        color: #fff;
+        &:after {
+          position: absolute;
+          content: '';
+          top: 50%;
+          left: 90%;
+          background: url("../img/arrow.png") no-repeat;
+          height: 25px;
+          width: 40px;
+        }
+      }
+    }
+    & > .button {
+      margin-left: 30px;
+      margin-top: 22px;
+    }
+    &_text {
+      margin-left: 30px;
+      margin-top: 24px;
+      & > .text-spam {
+        color: #fff;
+        line-height: 1.2;
+        font-family: Proxima, sans-serif;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.subsection {
+  height: 202px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 1px #b1b4b7;
+  &-wrapper {
+    height: inherit;
+    width: $container-width;
+  }
+  &__left {
+    width: 33.33333%;
+    height: inherit;
+    float: left;
+    &-img {
+      margin: 50px 45px 0;
+    }
+    &-text {
+      display: inline-block;
+      padding: 10px 0;
+      text-align: center;
+      width: 100%;
+      color: #815ca6;
+      font-family: Proxima, sans-serif;
+      font-size: 16px;
+    }
+    & > .avatar-pic {
+      margin-top: 28px;
+      margin-left: 40%;
+    }
+  }
+  &__center {
+    width: 33.33333%;
+    height: inherit;
+    display: inline-block;
+    position: relative;
+    & > .avatar-pic {
+      margin-top: 28px;
+      margin-left: 40%;
+    }
+    &-img {
+      margin: 50px 0 0 120px;
+    }
+    &-text {
+      display: inline-block;
+      text-align: center;
+      padding: 8px 0;
+      width: 100%;
+      color: #815ca6;
+      font-family: Proxima, sans-serif;
+      font-size: 16px;
+    }
+  }
+  &__right {
+    width: 33.33333%;
+    height: inherit;
+    display: inline-block;
+    float: right;
+    & > .avatar-pic {
+      margin-top: 28px;
+      margin-left: 40%;
+    }
+    &-list {
+      padding: 50px 0;
+    }
+    &-item {
+      padding-left: 50px;
+      line-height: 2;
+      font-family: Proxima, sans-serif;
+      font-size: 16px;
+      color: #815ca6;
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 25px;
+        width: 20px;
+        height: 20px;
+        background: url('../img/Check-box.png') no-repeat;
+        top: 50%;
+        margin-top: -10px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

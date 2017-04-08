@@ -1,0 +1,82 @@
+.laptops {
+  min-width: 1180px;
+  height: 485px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  &__header {
+    color: #737c8b;
+    font: 300 24px Ubuntu, sans-serif;
+    margin: 0 0 0 -47px;
+    padding: 30px 0 37px;
+    position: absolute;
+    width: inherit;
+    left: 50%;
+  }
+  &____backgradient {
+    top: 52%;
+    left: 50%;
+    margin-left: -470px;
+    height: 213px;
+    background: none;
+    background: radial-gradient(farthest-side at 50% -30%, #edeff0, transparent);
+    position: absolute;
+  }
+  &--wrapper {
+    top: 20%;
+    width: 100%;
+    min-width: $container-width;
+    height: 278px;
+    background: radial-gradient(circle, transparent 45%, #fff);
+    position: absolute;
+    z-index: 2;
+  }
+  &__slider {
+    position: static;
+    & > .button-arrow-left {
+      position: absolute;
+      margin: 0;
+      float: none;
+      top: 35%;
+      left: 29.35%;
+      width: 30px;
+      z-index: 3;
+    }
+    & > .button-arrow-right {
+      position: absolute;
+      margin: 0;
+      float: none;
+      top: 35%;
+      left: 69.35%;
+      width: 30px;
+      z-index: 3;
+    }
+  }
+  &__device {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -210px;
+    &--text {
+      position: absolute;
+      top: 74%;
+      text-align: center;
+      width: 260px;
+      left: 19%;
+      font: 300 14.21px Proxima, sans-serif;
+      color: #737c8b;
+    }
+    &--left {
+      left: 10%;
+    }
+    &--right {
+      left: 90%;
+    }
+  }
+  &__button {
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    margin-left: -131.5px;
+  }
+}

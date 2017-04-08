@@ -1,0 +1,116 @@
+.section3 {
+  height: 956px;
+  width: 100%;
+  &__upper {
+    height: 468px;
+    position: relative;
+    & > .button {
+      position: absolute;
+      left: 306px;
+    }
+    &_header {
+      height: 120px;
+      & > h2 {
+        text-align: center;
+        padding-top: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        font: bold 36px Ubuntu, sans-serif;
+      }
+    }
+    &_left {
+      height: 348px;
+      width: 455px;
+      float: left;
+      & > img {
+        height: 418px;
+        overflow: visible;
+      }
+    }
+    &_right {
+      padding-top: 88px;
+      margin-left: 455px;
+      height: 348px;
+      width: $container-width - 455;
+      position: relative;
+      & > span {
+        width: 290px;
+        padding-left: 51px;
+        text-align: center;
+        color: #fff;
+        font: 300 16px Proxima, sans-serif;
+        position: absolute;
+      }
+      & > .button {
+        position: absolute;
+        left: 41px;
+        margin-top: 100px;
+      }
+    }
+  }
+  &__lower {
+    height: 488px;
+    background: #fff;
+    & > .container {
+      height: 205px;
+    }
+    &_header {
+      text-align: center;
+      min-width: 160px;
+      color: #737c8b;
+      padding-top: 70px;
+      font: bold 16px Proxima, sans-serif;
+    }
+    &_text {
+      width: 85%;
+      min-width: 160px;
+      margin: 0 8%;
+      color: #737c8b;
+      font: 300 16px Proxima, sans-serif;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+}
+
+.line {
+  height: 1px;
+  width: inherit;
+  background: #eff2f5;
+}
+
+.button-arrow-left {
+  float: left;
+}
+
+.button-arrow-right {
+  float: right;
+}
+
+.subsection-lower {
+  width: 31.4%;
+  float: left;
+  & > .section3__lower_text {
+    padding-top: 5px;
+    font-size: 14.21px;
+    line-height: 1.2;
+  }
+  & > .section3__lower_text > b {
+    font-size: 31.97px;
+    line-height: 0;
+  }
+  & > .section3__lower_text > p {
+    text-align: right;
+    margin: 0;
+    padding-right: 31px;
+  }
+}
+
+.brands-header {
+  margin-top: 245px;
+  text-align: center;
+  & > span {
+    color: #737c8b;
+    font: 300 24px Ubuntu, sans-serif;
+  }
+}
